@@ -6,6 +6,11 @@ function createGrid(){
     for(let i = 0; i < totalSquares; i++){
         const cell = document.createElement('div')
         cell.classList.add('grid-cell')
+
+        cell.addEventListener('mouseenter', () => {
+            cell.style.backgroundColor = 'lightgrey'
+        })
+
         grid.appendChild(cell)
     }
 }
@@ -20,6 +25,11 @@ function createNewGrid(size){
     for (let i = 0; i < totalSquares; i++) {
         const cell = document.createElement('div');
         cell.classList.add('grid-cell');
+
+        cell.addEventListener('mouseenter', () => {
+            cell.style.backgroundColor = 'lightgrey'
+        })
+
         grid.appendChild(cell);
     }
 }
